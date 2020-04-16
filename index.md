@@ -6,17 +6,22 @@ title:  "cbenraw"
 
 ## Blog posts
 
-{% for post in site.posts %}
-    [{{ post.title }}]({{ post.url }})
-    <br />
-{% endfor %}
+<span>
+  {% for post in site.posts %}
+    <p>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </p>
+  {% endfor %}
+</span>
+
 
 ### Tags
 
 {% for tag in site.tags %}
   <h4>{{ tag[0] }}</h4>
+  <ul>
     {% for post in tag[1] %}
-      [{{ post.title }}]({{ post.url }})
-      <br />
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
+  </ul>
 {% endfor %}
