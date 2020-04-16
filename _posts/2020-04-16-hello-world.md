@@ -1,6 +1,6 @@
 ---
 title:  "Hello world"
-tags: [hello, world]
+tags: [hello-world]
 ---
 
 ## My hello world post
