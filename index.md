@@ -4,7 +4,7 @@ title:  "cbenraw"
 
 # A hearty welcome t' this 'ere site
 
-## Blog posts
+### Blog posts
 
 <ul>
   {% for post in site.posts %}
